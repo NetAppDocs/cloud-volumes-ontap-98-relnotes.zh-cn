@@ -1,0 +1,154 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.8 包括多项新功能和增强功能。 
+---
+= Cloud Volumes ONTAP 9.8 中的新增功能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.8 包括多项新功能和增强功能。
+
+最新版本的 Cloud Manager 还引入了其他功能和增强功能。请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 发行说明"^] 了解详细信息。
+
+
+
+== 9.8 GA （ 2021 年 1 月 5 日）
+
+Cloud Volumes ONTAP 9.8 的通用发布（ GA ）版本现已推出。GA 版本包含错误修复。Cloud Manager 将提示您将现有的 9.8 RC1 和 9.7 系统升级到此版本。
+
+
+
+== Cloud Manager 3.9.2 中引入的变更（ 2021 年 1 月 4 日）
+
+Cloud Manager 3.9.2 版包含多项 Cloud Volumes ONTAP 增强功能，包括支持 AWS 前台， Google Cloud 中的大型磁盘等。
+
+转至 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 发行说明"^] 有关 3.9.2 版的更多详细信息。
+
+
+
+== HA 对现在支持 E48s_v3 （ 2020 年 12 月 21 日）
+
+现在， Microsoft Azure 中的 Cloud Volumes ONTAP HA 对支持 E48s_v3 VM 类型。
+
+
+
+== 支持的 EC2 实例（ 2020 年 12 月 11 日）
+
+从 9.8 版开始，新的 Cloud Volumes ONTAP 系统不支持 C4 ， M4 和 C4 EC2 实例类型。也不支持将现有的 9.8 系统更改为以下实例类型之一。
+
+如果您的现有 Cloud Volumes ONTAP 9.7 系统运行的是 C4 ， M4 或 r4 实例类型，则仍可升级到 9.8 版。
+
+
+
+== 9.8 RC1 更新（ 2020 年 11 月 12 日）
+
+与单节点系统类似， Cloud Manager 现在可在使用 c5 ， m5 或 R5 实例类型时为 AWS 中的新 9.8 HA 对部署分配一个核心磁盘。核心磁盘扩展了在受支持的实例类型之间切换的能力，增强了系统在出现问题时收集核心文件的能力，并支持将来使用更大的实例类型。
+
+核心磁盘是一个通用 SSD （ GP2 ），具有 540 GiB 。
+
+
+NOTE: 随着此核心磁盘的添加，使用这些实例类型的系统现在可支持另外一个数据磁盘。 link:reference-limits-aws.html["详细了解 AWS 中的存储限制"]。
+
+
+
+== 9.8 RC1 （ 2020 年 11 月 8 日）
+
+Cloud Volumes ONTAP 9.8 RC1 现在可在 AWS ， Azure 和 Google 云平台中使用。在 Azure 中，目前只能升级 9.8 RC1 。
+
+除了提供的功能之外，还提供了 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.8"^]，此版本的 Cloud Volumes ONTAP 包括以下内容：
+
+* <<High-availability pairs in Google Cloud>>
+* <<Fixes for Azure NIC detach events and maintenance events>>
+* <<High write speed with HA pairs in AWS and Azure>>
+* <<Support for 24 storage VMs in AWS>>
+* <<Core disk for single node systems in AWS>>
+
+
+
+
+=== Google Cloud 中的高可用性对
+
+Cloud Volumes ONTAP 高可用性（ HA ）对现在可在 Google Cloud 中使用。
+
+HA 对可在云环境发生故障时提供企业级可靠性和持续运行。与 AWS 中的 Cloud Volumes ONTAP 类似， Google Cloud 中的 HA 对包括两个 Cloud Volumes ONTAP 节点，其数据在彼此之间同步镜像，以及一个调解器实例，此调解器实例可提供一个通信通道来协助存储接管和交还。
+
+查看 link:reference-configs-gcp.html["支持的配置"] 和 link:reference-limits-gcp.html["存储限制"]。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-google-cloud.html["了解有关 Google Cloud 中 HA 对的更多信息"^]。
+
+
+
+=== Azure NIC 断开事件和维护事件的修复
+
+此版本对 Cloud Volumes ONTAP 处理 Azure 冻结事件， Azure NIC 断开事件以及其他 Azure 维护活动（例如虚拟功能撤消）的方式进行了多项改进。在此版本中， Cloud Volumes ONTAP 的容错能力更强，可以更平稳地处理 Azure 事件，并降低服务中断或集群降级的可能性。
+
+
+
+=== 在 AWS 和 Azure 中使用 HA 对时写入速度较快
+
+现在，在使用特定实例或 VM 类型时， Cloud Volumes ONTAP 在 AWS 和 Azure 中支持高写入速度。如果您的工作负载需要快速写入性能、并且您可以在发生计划外系统中断时承受数据丢失的风险、则可以选择高速写入速度。
+
+在选择写入速度之前，您应了解正常设置与高设置之间的差异，以及使用高写入速度时的风险和建议。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["了解更多信息。"^]。
+
+
+
+=== 在 AWS 中最多支持 24 个 Storage VM
+
+现在，如果您使用的是 c5 ， m5 或 R5 实例类型并自带许可证，则 AWS 中的 Cloud Volumes ONTAP 最多可支持 24 个 Storage VM 。在这 24 个 Storage VM 中，最多可以配置 12 个用于灾难恢复（ DR ）。
+
+根据您使用的 EC2 实例类型，限制可以更低。
+
+默认情况下，除了 Cloud Volumes ONTAP 附带的第一个 Storage VM 之外，每个额外的 _data-fering-storage VM 都需要附加许可证。请联系您的客户团队以获取 SVM 附加许可证。
+
+您为灾难恢复（ DR ）配置的 Storage VM 不需要附加许可证（它们是免费的），但它们会计入 Storage VM 限制。
+
+link:reference-limits-aws.html["了解有关 Storage VM 限制的更多信息"]。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["了解如何在 AWS 中为 Cloud Volumes ONTAP 创建提供数据的 Storage VM"]。
+
+
+
+=== AWS 中单节点系统的核心磁盘
+
+现在，当您使用 c5 ， m5 或 R5 实例类型时， Cloud Manager 会为 AWS 中的新 9.8 单节点部署分配一个核心磁盘。核心磁盘扩展了在受支持的实例类型之间切换的能力，增强了系统在出现问题时收集核心文件的能力，并支持将来使用更大的实例类型。
+
+核心磁盘是一个通用 SSD （ GP2 ），具有 540 GiB 。
+
+
+NOTE: 随着此核心磁盘的添加，使用这些实例类型的单节点系统现在支持另外一个数据磁盘。 link:reference-limits-aws.html["详细了解 AWS 中的存储限制"]。
+
+
+
+== 所需版本的 Cloud Manager Connector
+
+Cloud Manager Connector 必须运行版本 3.9.0 或更高版本，才能部署新的 Cloud Volumes ONTAP 9.8 系统并将现有系统升级到版本 9.8 。
+
+
+
+== 升级说明
+
+* Cloud Volumes ONTAP 升级必须从 Cloud Manager 完成。您不应使用 System Manager 或命令行界面升级 Cloud Volumes ONTAP 。这样做可能会影响系统稳定性。
+* 您可以从 9.7 版升级到 Cloud Volumes ONTAP 9.8 。Cloud Manager 将提示您将现有 Cloud Volumes ONTAP 9.7 系统升级到 9.8 版。
++
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解在 Cloud Manager 通知您时如何升级"^]。
+
+* 升级单节点系统会使系统脱机长达 25 分钟，在此期间 I/O 会中断。
+* 升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。
+
+
+
+
+=== c4 ， m4 和 r4 实例类型
+
+从 9.8 版开始，新的 Cloud Volumes ONTAP 系统不支持 C4 ， M4 和 r4 实例类型。如果您的现有 Cloud Volumes ONTAP 系统运行的是 C4 ， M4 或 r4 实例类型，则仍可升级到此版本。
+
+建议更改为 c5 ， m5 或 R5 实例系列中的实例类型。
