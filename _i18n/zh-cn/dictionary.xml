@@ -507,7 +507,6 @@
   <block id="a9bbfc056f9af32f5b8b5299d59d6a65" category="list-text"><block ref="414aa64bad427d603b0ab5fa4f0045bb" category="inline-xref-macro-rx"></block></block>
   <block id="2c2fa2306df964af83bdc8ad394c19bf" category="list-text"><block ref="78e9f4d24f3d245843f17597b7eea087" category="inline-xref-macro-rx"></block></block>
   <block id="3f3a65fd887bfce013ffb37ada7936a1" category="list-text"><block ref="f23c113939a6f95e9baf91c09e11819a" category="inline-xref-macro-rx"></block></block>
-  <block id="cebb24a3f8fab933ad1dc12f14aa1b6e" category="list-text"><block ref="27c4b001e800ca1abc0736950d8502fb" category="inline-xref-macro-rx"></block></block>
   <block id="068254d3c11c93e8d017b3e9077e70a3" category="list-text"><block ref="b0bf545a16ef6b3212e6ec39bc4e0099" category="inline-xref-macro-rx"></block></block>
   <block id="d17c4281542937487475a76b3afea508" category="section-title">Google Cloud 中的高可用性对</block>
   <block id="6367c8ae9253a6d2da4e2d54275bc9ea" category="paragraph">Cloud Volumes ONTAP 高可用性（ HA ）对现在可在 Google Cloud 中使用。</block>
@@ -688,7 +687,6 @@
   <block id="63573dab314c98e4e22e47653c15cf64" category="list-text">如果您还没有订阅，<block ref="49d6686f1a400348bbcff579d9d978a6" category="inline-link-rx"></block>。</block>
   <block id="697cc5090bb98ee57c1e28438084378b" category="list-text">mailto ： ng-keystone-success@netapp.com （联系 NetApp ）授权您的 Cloud Manager 用户帐户订阅一个或多个 Keystone Flex 订阅。</block>
   <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link">链接您的订阅以用于 Cloud Volumes ONTAP</block>
-  <block id="f96e5580f13646b320535609852aaf80" category="list-text">在 NetApp 授权您的帐户后，<block ref="b8a2932fb185e14a928f847d974c3942" category="inline-link-rx"></block>。</block>
   <block id="de4b56542275c5f0b46bea6fcc27b034" category="list-text">创建 Cloud Volumes ONTAP 系统时，请选择 Keystone Flex 订阅收费方法。</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">基于节点的许可</block>
   <block id="361abfc2eaabdb045de49dafd20dbdf1" category="paragraph">基于节点的许可是上一代许可模式，可用于按节点许可 Cloud Volumes ONTAP 。新客户不能使用此许可模式，也不能免费试用。按节点充电已被上述按容量充电方法所取代。</block>
@@ -735,4 +733,6 @@
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 云</block>
   <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">对于其他提供数据的 Storage VM （ SVM ），无需额外的许可成本，但每个提供数据的 SVM 的最低容量费用为 4 TiB 。</block>
   <block id="cc331a0f761602982769cdbb99e71272" category="list-text">灾难恢复 SVM 会根据配置的容量进行收费。</block>
+  <block id="f0e23d104ab6f98c2391cebc2c05e7ec" category="list-text"><block ref="837340a3b9bc3128e6ccd8bb29485def" category="inline-xref-macro-rx"></block></block>
+  <block id="48f0974a79de83d6884f04d71ab3a90a" category="list-text">在 NetApp 授权您的帐户后，<block ref="691060edb0108ad45359b1773c59fa65" category="inline-link-rx"></block></block>
 </blocks>
