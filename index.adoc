@@ -7,6 +7,7 @@ summary: 本发行说明介绍了 Cloud Volumes ONTAP 9.8 的新增功能，限�
 ---
 = Cloud Volumes ONTAP 9.8 发行说明
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
