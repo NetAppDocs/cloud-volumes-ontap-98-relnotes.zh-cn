@@ -90,6 +90,9 @@ NOTE: 您可以为 Cloud Volumes ONTAP BYOL 系统购买多个基于节点的许
 
 
 | E64is_v3 | 29 | 368 TiB | 368 TiB 
+
+
+| E80ids_v4 | 61. | 368 TiB | 368 TiB 
 |===
 
 
@@ -134,6 +137,9 @@ NOTE: 对于某些 VM 类型，您需要多个 BYOL 许可证才能达到下面�
 
 
 | L8s_v2 | 13 | 368 TiB | 368 TiB | 416 TiB | 每个许可证 368 TiB x 
+
+
+| E80ids_v4 | 61. | 368 TiB | 368 TiB | 1.95 PIB | 每个许可证 368 TiB x 
 |===
 
 
@@ -169,6 +175,9 @@ NOTE: 对于某些 VM 类型，您需要多个 BYOL 许可证才能达到下面�
 
 
 | L8s_v2 | 13 | 416 TiB | 2 个 PIB 
+
+
+| E80ids_v4 | 61. | 1.95 PIB | 2 个 PIB 
 |===
 
 
@@ -189,6 +198,9 @@ NOTE: 对于某些 VM 类型，您需要多个 BYOL 许可证才能达到下面�
 
 
 | E48s_v3 | 29 | 232 TiB | 368 TiB 
+
+
+| E80ids_v4 | 61. | 368 TiB | 368 TiB 
 |===
 
 
@@ -218,6 +230,9 @@ NOTE: 对于某些 VM 类型，您需要多个 BYOL 许可证才能达到下面�
 
 
 | E48s_v3 | 29 | 232 TiB | 368 TiB | 232 TiB | 每个许可证 368 TiB x 
+
+
+| E80ids_v4 | 61. | 368 TiB | 368 TiB | 488 TiB | 每个许可证 368 TiB x 
 |===
 
 
@@ -238,6 +253,9 @@ NOTE: 对于某些 VM 类型，您需要多个 BYOL 许可证才能达到下面�
 
 
 | E48s_v3 | 29 | 232 TiB | 2 个 PIB 
+
+
+| E80ids_v4 | 61. | 488 TiB | 2 个 PIB 
 |===
 
 
