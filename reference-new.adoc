@@ -20,6 +20,16 @@ Cloud Volumes ONTAP 9.8 包括多项新功能和增强功能。
 
 
 
+== 不再支持c4、m4和r4实例(2022年10月28日)
+
+在AWS中、Cloud Volumes ONTAP 不再支持C4、M4和M4 EC2实例类型。如果现有系统运行的是C4、M4或r4实例类型、则必须更改为c5、M5或R5实例系列中的实例类型。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["了解如何更改Cloud Volumes ONTAP 的EC2实例类型"^]。
+
+请参见 link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp 支持"^] 了解有关这些实例类型的可用性和支持终止的更多信息。
+
+
+
 == 9.8 GA （ 2021 年 1 月 5 日）
 
 Cloud Volumes ONTAP 9.8 的通用发布（ GA ）版本现已推出。GA 版本包含错误修复。Cloud Manager 将提示您将现有的 9.8 RC1 和 9.7 系统升级到此版本。
@@ -65,11 +75,11 @@ Cloud Volumes ONTAP 9.8 RC1 现在可在 AWS ， Azure 和 Google 云平台中�
 
 除了提供的功能之外，还提供了 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.8"^]，此版本的 Cloud Volumes ONTAP 包括以下内容：
 
-* <<High-availability pairs in Google Cloud>>
-* <<Fixes for Azure NIC detach events and maintenance events>>
-* <<High write speed with HA pairs in AWS and Azure>>
-* <<Support for up to 24 storage VMs in AWS>>
-* <<Core disk for single node systems in AWS>>
+*  pairs in Google Cloud
+*  for Azure NIC detach events and maintenance events
+*  write speed with HA pairs in AWS and Azure
+*  for up to 24 storage VMs in AWS
+*  disk for single node systems in AWS
 
 
 
@@ -114,7 +124,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-sp
 
 link:reference-limits-aws.html["了解有关 Storage VM 限制的更多信息"]。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["了解如何在 AWS 中为 Cloud Volumes ONTAP 创建提供数据的 Storage VM"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["了解如何在 AWS 中为 Cloud Volumes ONTAP 创建提供数据的 Storage VM"^]。
 
 
 
@@ -145,11 +155,3 @@ http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ont
 * 升级单节点系统会使系统脱机长达 25 分钟，在此期间 I/O 会中断。
 * 升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。
 
-
-
-
-=== c4 ， m4 和 r4 实例类型
-
-从 9.8 版开始，新的 Cloud Volumes ONTAP 系统不支持 C4 ， M4 和 r4 实例类型。如果您的现有 Cloud Volumes ONTAP 系统运行的是 C4 ， M4 或 r4 实例类型，则仍可升级到此版本。
-
-建议更改为 c5 ， m5 或 R5 实例系列中的实例类型。
