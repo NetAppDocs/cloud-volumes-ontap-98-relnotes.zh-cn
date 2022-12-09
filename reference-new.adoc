@@ -75,11 +75,11 @@ Cloud Volumes ONTAP 9.8 RC1 现在可在 AWS ， Azure 和 Google 云平台中�
 
 除了提供的功能之外，还提供了 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.8"^]，此版本的 Cloud Volumes ONTAP 包括以下内容：
 
-*  pairs in Google Cloud
-*  for Azure NIC detach events and maintenance events
-*  write speed with HA pairs in AWS and Azure
-*  for up to 24 storage VMs in AWS
-*  disk for single node systems in AWS
+* <<Google Cloud 中的高可用性对>>
+* <<Azure NIC 断开事件和维护事件的修复>>
+* <<在 AWS 和 Azure 中使用 HA 对时写入速度较快>>
+* <<在 AWS 中最多支持 24 个 Storage VM>>
+* <<AWS 中单节点系统的核心磁盘>>
 
 
 
