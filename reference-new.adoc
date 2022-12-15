@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.8 包括多项新功能和增强功能。
 [role="lead"]
 Cloud Volumes ONTAP 9.8 包括多项新功能和增强功能。
 
-最新版本的 Cloud Manager 还引入了其他功能和增强功能。请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 发行说明"^] 了解详细信息。
+最新版本的BlueXP还引入了其他功能和增强功能。请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["《BlueXP发行说明》"^] 了解详细信息。
 
 
 
@@ -32,15 +32,15 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change
 
 == 9.8 GA （ 2021 年 1 月 5 日）
 
-Cloud Volumes ONTAP 9.8 的通用发布（ GA ）版本现已推出。GA 版本包含错误修复。Cloud Manager 将提示您将现有的 9.8 RC1 和 9.7 系统升级到此版本。
+Cloud Volumes ONTAP 9.8 的通用发布（ GA ）版本现已推出。GA 版本包含错误修复。BlueXP将提示您将现有的9.8 RC1和9.7系统升级到此版本。
 
 
 
-== Cloud Manager 3.9.2 中引入的变更（ 2021 年 1 月 4 日）
+== Connector 3.9.2中引入的变更(2021年1月4日)
 
-Cloud Manager 3.9.2 版包含多项 Cloud Volumes ONTAP 增强功能，包括支持 AWS 前台， Google Cloud 中的大型磁盘等。
+BlueXP Connector 3.9.2版为Cloud Volumes ONTAP 提供了多项增强功能、包括支持AWS前台、Google Cloud中的大型磁盘等。
 
-转至 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 发行说明"^] 有关 3.9.2 版的更多详细信息。
+转至 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["《BlueXP发行说明》"^] 有关 3.9.2 版的更多详细信息。
 
 
 
@@ -60,7 +60,7 @@ Cloud Manager 3.9.2 版包含多项 Cloud Volumes ONTAP 增强功能，包括支
 
 == 9.8 RC1 更新（ 2020 年 11 月 12 日）
 
-与单节点系统类似， Cloud Manager 现在可在使用 c5 ， m5 或 R5 实例类型时为 AWS 中的新 9.8 HA 对部署分配一个核心磁盘。核心磁盘扩展了在受支持的实例类型之间切换的能力，增强了系统在出现问题时收集核心文件的能力，并支持将来使用更大的实例类型。
+与单节点系统类似、现在、如果您使用的是c5、m5或R5实例类型、则BlueXP会为AWS中的新9.8 HA对部署分配一个核心磁盘。核心磁盘扩展了在受支持的实例类型之间切换的能力，增强了系统在出现问题时收集核心文件的能力，并支持将来使用更大的实例类型。
 
 核心磁盘是一个通用 SSD （ GP2 ），具有 540 GiB 。
 
@@ -130,7 +130,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 
 === AWS 中单节点系统的核心磁盘
 
-现在，当您使用 c5 ， m5 或 R5 实例类型时， Cloud Manager 会为 AWS 中的新 9.8 单节点部署分配一个核心磁盘。核心磁盘扩展了在受支持的实例类型之间切换的能力，增强了系统在出现问题时收集核心文件的能力，并支持将来使用更大的实例类型。
+现在、当您使用c5、m5或R5实例类型时、BlueXP会为AWS中的新9.8单节点部署分配一个核心磁盘。核心磁盘扩展了在受支持的实例类型之间切换的能力，增强了系统在出现问题时收集核心文件的能力，并支持将来使用更大的实例类型。
 
 核心磁盘是一个通用 SSD （ GP2 ），具有 540 GiB 。
 
@@ -139,18 +139,18 @@ NOTE: 随着此核心磁盘的添加，使用这些实例类型的单节点系�
 
 
 
-== 所需版本的 Cloud Manager Connector
+== 所需版本的BlueXP Connector
 
-Cloud Manager Connector 必须运行版本 3.9.0 或更高版本，才能部署新的 Cloud Volumes ONTAP 9.8 系统并将现有系统升级到版本 9.8 。
+要部署新的Cloud Volumes ONTAP 9.8系统并将现有系统升级到9.8版、BlueXP Connector必须运行版本3.9.0或更高版本。
 
 
 
 == 升级说明
 
-* Cloud Volumes ONTAP 升级必须从 Cloud Manager 完成。您不应使用 System Manager 或命令行界面升级 Cloud Volumes ONTAP 。这样做可能会影响系统稳定性。
-* 您可以从 9.7 版升级到 Cloud Volumes ONTAP 9.8 。Cloud Manager 将提示您将现有 Cloud Volumes ONTAP 9.7 系统升级到 9.8 版。
+* 必须从BlueXP完成Cloud Volumes ONTAP 升级。您不应使用 System Manager 或命令行界面升级 Cloud Volumes ONTAP 。这样做可能会影响系统稳定性。
+* 您可以从 9.7 版升级到 Cloud Volumes ONTAP 9.8 。BlueXP将提示您将现有Cloud Volumes ONTAP 9.7系统升级到9.8版。
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解在 Cloud Manager 通知您时如何升级"^]。
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解在收到BlueXP通知时如何升级"^]。
 
 * 升级单节点系统会使系统脱机长达 25 分钟，在此期间 I/O 会中断。
 * 升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。
