@@ -60,7 +60,7 @@ Cloud Volumes ONTAP 系统的最大系统容量取决于其许可证。最大系
 
 
 
-NOTE: 您可以为 Cloud Volumes ONTAP BYOL 系统购买多个基于节点的许可证，以分配超过 368 TiB 的容量。您可以为单节点系统或 HA 对购买的许可证数量不受限制。请注意，磁盘限制可能会阻止您单独使用磁盘来达到容量限制。您可以通过超出磁盘限制 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["将非活动数据分层到对象存储"^]。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["了解如何向 Cloud Volumes ONTAP 添加其他系统许可证"^]。
+NOTE: 您可以为 Cloud Volumes ONTAP BYOL 系统购买多个基于节点的许可证，以分配超过 368 TiB 的容量。您可以为单节点系统或 HA 对购买的许可证数量不受限制。请注意，磁盘限制可能会阻止您单独使用磁盘来达到容量限制。您可以通过超出磁盘限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["将非活动数据分层到对象存储"^]。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["了解如何向 Cloud Volumes ONTAP 添加其他系统许可证"^]。
 
 
 
